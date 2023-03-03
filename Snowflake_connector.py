@@ -5,9 +5,9 @@ import pyarrow.parquet as pq
 
 # Connect to Snowflake
 con = snowflake.connector.connect(
-   user='Tonzu',
-   password='Snowflake@091287',
-   account='ft33439.ap-south-1.aws',
+   user='username',
+   password='password',
+   account='account',
    database='ANALYTICS',
    schema='PUBLIC',
    warehouse='TRANSFORMING'

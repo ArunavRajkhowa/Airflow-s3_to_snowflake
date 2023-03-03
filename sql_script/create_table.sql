@@ -1,4 +1,4 @@
-create or replace TABLE MY_DB.MY_SCHEMA.EMPLOYEE_airflow_dock (
+create or replace TABLE RAW.PUBLIC.EMPLOYEE_airflow_dock (
 	ID NUMBER(38,0) NOT NULL autoincrement,
 	NAME VARCHAR(50) NOT NULL,
 	DEPARTMENT VARCHAR(50) NOT NULL,
