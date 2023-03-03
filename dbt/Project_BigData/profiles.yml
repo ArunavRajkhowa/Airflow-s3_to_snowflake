@@ -1,0 +1,26 @@
+Project_BigData:
+  outputs:
+    dev:
+      account: pg13792.us-east4.gcp
+      database: BIG_DATA
+      password: Snowflake@091287
+      role: ACCOUNTADMIN
+      schema: BD1
+      threads: 8
+      type: snowflake
+      user: Tonzu
+      warehouse: COMPUTE_WH
+  target: dev
+my_snowflake_profile:
+  outputs:
+    dev:
+      account: pg13792.us-east4.gcp
+      database: BIG_DATA
+      password: Snowflake@091287
+      role: ACCOUNTADMIN
+      schema: BD1
+      threads: 8
+      type: snowflake
+      user: Tonzu
+      warehouse: COMPUTE_WH
+  target: dev
