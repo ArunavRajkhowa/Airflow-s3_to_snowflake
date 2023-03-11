@@ -87,5 +87,43 @@ CREATE or replace TABLE MYPRODUCTTABLE (
 );
 
 
+-- loading data into the facts and dimensions table
+  INSERT INTO MYFACTSTABLE (Invoice_Id ,  Unit_Price ,  Quantity ,  Tax_5perc ,  Total,  cogs ,  gross_margin_percentage ,  gross_income ,  Rating )
+  WITH cte AS
+    (SELECT Invoice_Id ,  Unit_Price ,  Quantity ,  Tax_5perc ,  Total,  cogs ,  gross_margin_percentage ,  gross_income ,  Rating 
+     FROM MYCSVTABLE)
+  SELECT Invoice_Id ,  Unit_Price ,  Quantity ,  Tax_5perc ,  Total,  cogs ,  gross_margin_percentage ,  gross_income ,  Rating 
+  FROM cte;
 
 
+
+  INSERT INTO MYDATETABLE (Invoice_Id,Date,Time)
+  WITH cte AS
+    (SELECT Invoice_Id,Date,Time
+     FROM MYCSVTABLE)
+  SELECT Invoice_Id,Date,Time
+  FROM cte;
+
+  INSERT INTO MYADDRESSTABLE (Invoice_Id,City)
+  WITH cte AS
+    (SELECT Invoice_Id,City
+     FROM MYCSVTABLE)
+  SELECT Invoice_Id,City
+  FROM cte;
+
+
+
+INSERT INTO MYPRODUCTTABLE (Invoice_Id,Product_line)
+  WITH cte AS
+    (SELECT Invoice_Id,Product_line
+     FROM MYCSVTABLE)
+  SELECT Invoice_Id,Product_line
+  FROM cte;
+
+
+  INSERT INTO MYCUSTOMERTABLE (Invoice_Id,Branch,Customer_Type,Gender)
+  WITH cte AS
+    (SELECT Invoice_Id,Branch,Customer_Type,Gender
+     FROM MYCSVTABLE)
+  SELECT Invoice_Id,Branch,Customer_Type,Gender
+  FROM cte;
