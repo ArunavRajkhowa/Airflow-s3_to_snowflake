@@ -1,0 +1,44 @@
+2023-03-11 07:42:30,034 (20712/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:706  - Initialized logging. Log file './snowsql_rt.log_bootstrap', Namespaces: ['snowflake.cli', 'snowflake.connector', 'botocore', 'azure', '__main__', 'eventloop', 'sqlexecute']
+2023-03-11 07:42:30,034 (20712/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:725  - cacert?: C:\Users\Dell\AppData\Local\Temp\_MEI367002\base_library.zip\cacert.pem, C:\Users\Dell\AppData\Local\Temp\_MEI367002\base_library.zip\certifi\cacert.pem
+2023-03-11 07:42:30,034 (20712/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:725  - cacert?: C:\Users\Dell\AppData\Local\Temp\_MEI367002\lib-dynload\cacert.pem, C:\Users\Dell\AppData\Local\Temp\_MEI367002\lib-dynload\certifi\cacert.pem
+2023-03-11 07:42:30,034 (20712/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:725  - cacert?: C:\Users\Dell\AppData\Local\Temp\_MEI367002\cacert.pem, C:\Users\Dell\AppData\Local\Temp\_MEI367002\certifi\cacert.pem
+2023-03-11 07:42:30,034 (20712/MainThread) snowflake.cli.common.util_cli INFO       util_cli:733  - cacert.pem is set to REQUESTS_CA_BUNDLE: C:\Users\Dell\AppData\Local\Temp\_MEI367002\certifi\cacert.pem
+2023-03-11 07:42:30,034 (20712/MainThread) __main__ DEBUG      bootstrap:345  - proxy_host:None, proxy_port: None, proxy_user: None, proxy_password:False
+2023-03-11 07:42:30,034 (20712/MainThread) __main__ INFO      bootstrap:350  - no autoupgrade option: False
+2023-03-11 07:42:30,034 (20712/MainThread) __main__ INFO      bootstrap:352  - version: None, ret_options: None
+2023-03-11 07:42:30,042 (20712/MainThread) __main__ DEBUG      bootstrap:750  - No deletion happened. The number of snowsql is still less than 5
+2023-03-11 07:42:30,050 (20712/MainThread) __main__ DEBUG      bootstrap:365  - can we upgrade?: True
+2023-03-11 07:42:30,050 (20712/MainThread) __main__ INFO      bootstrap:370  - auto upgrade without version
+2023-03-11 07:42:30,050 (20712/MainThread) __main__ DEBUG      bootstrap:906  - Checking Repository: https://sfc-repo.snowflakecomputing.com/snowsql/1.2/windows_x86_64/index.json
+2023-03-11 07:42:31,468 (20712/MainThread) __main__ DEBUG      bootstrap:922  - List Objects: [
+    "snowsql-1.2.24-windows_x86_64.zip",
+    "snowsql-1.2.23-windows_x86_64.zip",
+    "snowsql-1.2.22-windows_x86_64.zip",
+    "snowsql-1.2.21-windows_x86_64.zip",
+    "snowsql-1.2.20-windows_x86_64.zip",
+    "snowsql-1.2.19-windows_x86_64.zip",
+    "snowsql-1.2.18-windows_x86_64.zip",
+    "snowsql-1.2.17-windows_x86_64.zip",
+    "snowsql-1.2.16-windows_x86_64.zip",
+    "snowsql-1.2.15-windows_x86_64.zip",
+    "snowsql-1.2.14-windows_x86_64.zip",
+    "snowsql-1.2.13-windows_x86_64.zip",
+    "snowsql-1.2.12-windows_x86_64.zip",
+    "snowsql-1.2.11-windows_x86_64.zip",
+    "snowsql-1.2.10-windows_x86_64.zip",
+    "snowsql-1.2.9-windows_x86_64.zip",
+    "snowsql-1.2.8-windows_x86_64.zip",
+    "snowsql-1.2.7-windows_x86_64.zip",
+    "snowsql-1.2.5-windows_x86_64.zip",
+    "snowsql-1.2.4-windows_x86_64.zip",
+    "snowsql-1.2.3-windows_x86_64.zip",
+    "snowsql-1.2.2-windows_x86_64.zip",
+    "snowsql-1.2.1-windows_x86_64.zip",
+    "snowsql-1.2.0-windows_x86_64.zip"
+]
+2023-03-11 07:42:31,471 (20712/MainThread) __main__ DEBUG      bootstrap:945  - extracting from sfc-repo bucket
+2023-03-11 07:42:31,474 (20712/MainThread) __main__ DEBUG      bootstrap:808  - Available snowsql files: ['1.2/windows_x86_64/snowsql-1.2.24-windows_x86_64.zip', '1.2/windows_x86_64/snowsql-1.2.23-windows_x86_64.zip', '1.2/windows_x86_64/snowsql-1.2.22-windows_x86_64.zip', '1.2/windows_x86_64/snowsql-1.2.21-windows_x86_64.zip', '1.2/windows_x86_64/snowsql-1.2.20-windows_x86_64.zip', '1.2/windows_x86_64/snowsql-1.2.19-windows_x86_64.zip', '1.2/windows_x86_64/snowsql-1.2.18-windows_x86_64.zip', '1.2/windows_x86_64/snowsql-1.2.17-windows_x86_64.zip', '1.2/windows_x86_64/snowsql-1.2.16-windows_x86_64.zip', '1.2/windows_x86_64/snowsql-1.2.15-windows_x86_64.zip', '1.2/windows_x86_64/snowsql-1.2.14-windows_x86_64.zip', '1.2/windows_x86_64/snowsql-1.2.13-windows_x86_64.zip', '1.2/windows_x86_64/snowsql-1.2.12-windows_x86_64.zip', '1.2/windows_x86_64/snowsql-1.2.11-windows_x86_64.zip', '1.2/windows_x86_64/snowsql-1.2.10-windows_x86_64.zip', '1.2/windows_x86_64/snowsql-1.2.9-windows_x86_64.zip', '1.2/windows_x86_64/snowsql-1.2.8-windows_x86_64.zip', '1.2/windows_x86_64/snowsql-1.2.7-windows_x86_64.zip', '1.2/windows_x86_64/snowsql-1.2.5-windows_x86_64.zip', '1.2/windows_x86_64/snowsql-1.2.4-windows_x86_64.zip', '1.2/windows_x86_64/snowsql-1.2.3-windows_x86_64.zip', '1.2/windows_x86_64/snowsql-1.2.2-windows_x86_64.zip', '1.2/windows_x86_64/snowsql-1.2.1-windows_x86_64.zip', '1.2/windows_x86_64/snowsql-1.2.0-windows_x86_64.zip']
+2023-03-11 07:42:31,475 (20712/MainThread) __main__ DEBUG      bootstrap:809  - snowsql file: 1.2/windows_x86_64/snowsql-1.2.24-windows_x86_64.zip
+2023-03-11 07:42:31,475 (20712/MainThread) __main__ DEBUG      bootstrap:623  - Latest version: 1.2.24 in remote
+2023-03-11 07:42:31,475 (20712/MainThread) __main__ INFO      bootstrap:247  - Recorded autoupgrade status
+2023-03-11 07:42:31,482 (20712/MainThread) __main__ DEBUG      bootstrap:828  - Running C:\Users\Dell\.snowsql\1.2.24\snowsql.exe
